@@ -1,0 +1,7 @@
+name: learn-github-actions
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: [self-hosted, linux, ARM64, nishant]
+    steps:
+      - run: sudo apt-get update
